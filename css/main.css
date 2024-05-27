@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Teachers", sans-serif;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+h3 {
+  font-family: "Pacifico", cursive;
+  text-align: center;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  align-items: center;
+}
+.header .container a {
+  text-decoration: none;
+  color: #051721;
+}
+.header .container .logo {
+  font-weight: 900;
+  font-size: large;
+}
+.header .container .nav a {
+  margin: 0 15px;
+}
+.header .container .nav button {
+  border: none;
+  background-color: white;
+}
+
+.aboutUs {
+  margin-top: 100px;
+}
+.aboutUs .container .left button {
+  padding: 20px 50px;
+  border: solid 0;
+  border-radius: 50px;
+  margin-top: 20px;
+  color: rgba(255, 255, 255, 0.9);
+  background: linear-gradient(-45deg, #ffa63d, #ff3d77, #338aff, #3cf0c5);
+  background-size: 600%;
+  animation: anime 16s linear infinite;
+  font-size: 18px;
+  font-weight: 600;
+}
+.aboutUs .container .left button a {
+  text-decoration: none;
+  color: white;
+  margin: 0 15px;
+}
+.aboutUs .container .left button a i {
+  font-size: 20px;
+}
+
+.products .animated-button {
+  border: 0 solid;
+  background-color: #ffa63d;
+  padding: 15px 20px;
+  border-radius: 50%;
+}
+.products .animated-button:hover {
+  background-color: #f65617;
+  color: white;
+}
+.products .bot button {
+  margin-right: auto;
+  padding: 10px 20px;
+  border: solid 0;
+  border-radius: 10px;
+  margin-top: 20px;
+  color: rgba(255, 255, 255, 0.9);
+  background: linear-gradient(-45deg, #ffa63d, #ff3d77, #338aff, #3cf0c5);
+  background-size: 600%;
+  animation: anime 16s linear infinite;
+  font-size: 18px;
+  font-weight: 600;
+}
+.products .bot button i {
+  margin-right: 20px;
+}
+.products .bot p {
+  font-size: 20px;
+  font-weight: 600;
+  position: relative;
+  top: 30px;
+}
+
+.contact .container .left {
+  background-color: rgba(250, 235, 215, 0.508);
+  position: relative;
+  bottom: 80px;
+}
+.contact .container .right button {
+  border: solid 0;
+  padding: 15px 50px;
+  background-color: #ffa63d;
+  font-weight: 200;
+  transition: 0.3s;
+}
+.contact .container .right button:hover {
+  background-color: #f65617;
+}
+
+.footer {
+  background-color: #051721;
+  color: white;
+  height: 200px;
+}
+.footer h6, .footer p, .footer .link {
+  position: relative;
+}
+.footer h6 {
+  top: 50px;
+}
+.footer p {
+  top: 70px;
+}
+.footer .link {
+  top: 70px;
+  bottom: 20px;
+}
+.footer .link a {
+  text-decoration: none;
+  color: white;
+  margin: 0 20px;
+}
+
+@keyframes anime {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}/*# sourceMappingURL=main.css.map */

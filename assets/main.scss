@@ -1,0 +1,29 @@
+$primary_color: #051721;
+$secondary_color: white;
+$third_color: #2D383E;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+    font-family: "Teachers", sans-serif;
+
+}
+nav{
+   
+    .container{
+        
+        color: $primary_color;
+        
+        a{
+            font-weight: 600;
+        }
+        
+         
+    }
+    
+}
+
+
+

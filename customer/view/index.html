@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sevillana&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sevillana&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- my css -->
+    <link rel="stylesheet" href="../../css/main.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <div class="header shadow bg-body rounded">
+      <div class="container p-3 fs-1">
+        <div class="logo">
+          <a href="#">PhoneStore</a>
+        </div>
+        <div class="nav">
+          <a href="index.html">Home</a>
+          <a href="#aboutUs">About Us</a>
+          <a href="#pro">Products</a>
+          <a href="#contact">Contacts</a>
+          <a href="../../admin/view/index.html"
+            >Admin <i class="fa fa-user-cog"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Us -->
+    <div class="aboutUs" id="aboutUs">
+      <div class="container p-3 d-flex justify-content-between">
+        <div class="left w-50">
+          <h3>About Us</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+            aliquam distinctio cumque non deserunt, voluptate optio voluptatum
+            iure sed qui, quod illo eos perspiciatis tempore eligendi assumenda
+            neque quaerat quidem, repellat omnis. Rem, exercitationem
+            voluptates.
+          </p>
+
+          <button class="mation">
+            <a href="#pro"><i class="fa fa-cart-plus"></i></a>Shop Now
+          </button>
+        </div>
+        <div class="right w-50 p-3">
+          <iframe
+            width="500"
+            height="280"
+            src="https://www.youtube.com/embed/VDJlWuxMnjg?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&fs=0&showinfo=0"
+            title="Introducing iPhone 16 | Apple | (Concept Trailer)"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- Products -->
+    <div class="products p-3" id="pro">
+      <div class="container">
+       
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Shopping Cart</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">...</div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button type="button" class="btn btn-primary">
+                  Save changes
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3>Products</h3>
+
+        <!-- button cart & filter -->
+        <div class="cartandFilter d-flex justify-content-between">
+          <!-- Button trigger modal -->
+         <button
+         class="animated-button"
+         type="button"
+         data-bs-toggle="modal"
+         data-bs-target="#exampleModal"
+       >
+         <i class="fa fa-shopping-cart"></i>
+       </button>
+
+       <div class="dropdown">
+        <button onclick="" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          FILTER BY TYPE
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">Apple</a></li>
+          <li><a class="dropdown-item" href="#">Samsung</a></li>
+          <li><a class="dropdown-item" href="#">Oppo</a></li>
+          <li><a class="dropdown-item" href="#">Nokia</a></li>
+          <li><a class="dropdown-item" href="#">Xiaomi</a></li>
+          <li><a class="dropdown-item" href="#">Vivo</a></li>
+        </ul>
+      </div>
+
+        </div>
+       
+        <div id="filtered-products" class="row mt-4"></div>
+        <div class="row mt-4" id="product-list">
+          <!-- <div class="col-4">
+            <div class="card">
+              <div class="card-body">
+                <div class="item d-flex">
+                    <div class="left">
+                        <div class="">
+                          <img
+                            width="100%" height="100%"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREe1m7bSLJHn-r41rcIOLjd1wLBVX56WmQwbMnOOmuMxnQr1sK6WYyR-HegTRttowJfVU&usqp=CAU"
+                            class="rounded"
+                            alt="..."
+                          />
+                        </div>
+                      </div>
+                      <div class="right ms-3">
+                          <h5 class="card-title" id="name">Special title treatment</h5>
+                          <h5 class="card-title text-secondary" id="price"><i class="fa fa-money-check-alt me-2"></i>1000</h5>
+                          
+                      <p class="card-text" id="des">
+                        With supporting text below as a natural lead-in to additional
+                        content.
+                      </p>
+                      
+                      </div>
+
+                </div>
+                <div class="bot mt-2 d-flex justify-content-between ">
+                    <button><i class="fa fa-cart-plus"></i>Buy Now</button>
+                
+
+                </div>
+
+                
+                
+
+                
+                
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="contact" id="contact">
+      <div class="backgr d-flex">
+        <img
+          src="https://i.pinimg.com/564x/5a/bb/2c/5abb2caa213b5a868c320fe0a356f704.jpg"
+          alt=""
+        />
+        <img
+          src="https://i.pinimg.com/564x/5a/bb/2c/5abb2caa213b5a868c320fe0a356f704.jpg"
+          alt=""
+        />
+        <img
+          width="15%"
+          src="https://i.pinimg.com/564x/5a/bb/2c/5abb2caa213b5a868c320fe0a356f704.jpg"
+          alt=""
+        />
+      </div>
+      <div class="container d-flex justify-content-between">
+        <div class="left w-25 p-5 ms-lg-4">
+          <h4 class="fw-bolder">Contact Us</h4>
+          <div class="email mt-5">
+            <h5>BY EMAIL</h5>
+            <p>shopstore@gmail.com</p>
+          </div>
+          <div class="social mt-4">
+            <h5>ON SOCIAL</h5>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+          </div>
+          <div class="byForm mt-4">
+            <h5>BY FORM</h5>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          </div>
+          <div class="time mt-4">
+            <h5>HOURS</h5>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <div class="right w-50">
+          <div class="mb-3 mt-5">
+            <input
+              type="text"
+              class="form-control mb-3 "
+              id="exampleFormControlInput1"
+              placeholder="Your Name"
+            />
+            <input
+              type="email"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="Email Address"
+            />
+          </div>
+          <div class="mb-3">
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              placeholder="Your Message"
+              rows="3"
+            ></textarea>
+          </div>
+          <button>SEND YOUR MESSAGE</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+
+    <div class="footer text-center">
+      
+        <h6>SHOPSTORE</h6>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae, earum!
+        </p>
+        <div class="link">
+          <a id="active" href="#">Home</a>
+          <a href="#aboutUs">About Us</a>
+          <a href="#pro">Products</a>
+          <a href="#contact">Contacts</a>
+        </div>
+      </div>
+    
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- axios -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js"
+      integrity="sha512-JSCFHhKDilTRRXe9ak/FJ28dcpOJxzQaCd3Xg8MyF6XFjODhy/YMCM8HW0TFDckNHWUewW+kfvhin43hKtJxAw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- services -->
+    <script src="../services/proServices.js"></script>
+
+    <!-- controller -->
+    <script src="../controller/controllel.js"></script>
+
+    <!-- my js -->
+    <script src="../model/index.js"></script>
+  </body>
+</html>
